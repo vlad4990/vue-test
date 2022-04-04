@@ -35,7 +35,7 @@ export default {};
 }
 
 .modal-container {
-  width: 400px;
+  width: 375px;
   margin: 0px auto;
   padding: 20px 20px;
   background-color: #fff;

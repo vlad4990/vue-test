@@ -17,18 +17,22 @@
         }
       "
     />
-    <button
-      class="h-10 px-6 font-semibold rounded-md bg-red-500 text-white"
-      @click="resetTable"
-    >
-      Обнулить Таблицу
-    </button>
-    <button
-      class="h-10 px-6 font-semibold rounded-md bg-gray-500 text-white ml-10"
-      @click="resetSorting"
-    >
-      Сбросить фильтр
-    </button>
+    <div class="flex justify-center">
+      <div class="flex flex-wrap justify-center">
+        <button
+          class="h-10 px-6 m-2 font-semibold rounded-md bg-red-500 text-white"
+          @click="resetTable"
+        >
+          Обнулить Таблицу
+        </button>
+        <button
+          class="h-10 px-6 m-2 font-semibold rounded-md bg-gray-500 text-white"
+          @click="resetSorting"
+        >
+          Сбросить фильтр
+        </button>
+      </div>
+    </div>
     <modal-window v-if="isFormOpen" @close="isFormOpen = false">
       <user-form
         @close="isFormOpen = false"
